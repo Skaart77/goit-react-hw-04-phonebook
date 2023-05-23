@@ -23,7 +23,7 @@ function Form({ onSubmit }) {
   // Викликається під час відправлення форми
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit({ name, number });
+    onSubmit(name, number);
     reset();
   };
 
